@@ -1,0 +1,28 @@
+Dominic DeMarco Shell Project.
+
+Code Status:
+-Complete and funtional to specifications.
+-Runs on Linux only.
+-All features are implemented that were requested on the lab's web page.
+
+Notable Bugs:
+-When attempting to cd to a directory above / a segfault occurs.
+-Sometimes when a job is stored, the name is wingdingy gibberish.
+-Every so often when resuming from a program that takes over the screen,
+ the prompt appears before the output.
+-Possibly other slight ones, as I am not a C error checking pro, but those
+ are the major ones I've come across in my limited testing.
+
+NOTE WHEN COMPILING
+
+DOES NOT COMPILE ON POLARIS, a bug in the linux distrobution running on polaris
+exists where there is a syntax error in the file 
+"/usr/include/bits/resource.h:171: error: comma at end of enumerator list"
+
+WHEN COMPILING ON ITL MACHINES
+
+The ITL machines have a linux distrobution that does not have the dev package
+of readline installed, so as a result I have compiled readline locally and 
+have pointed to those local libraries in the makefile
+
+Long story short, run make on the ITL computers and it will compile.
